@@ -1,0 +1,19 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    .bannerimage {
+        height: 250px;
+        width: 95%;
+        object-fit: cover;
+        border-radius: 30px;
+        filter: brightness(0.5);
+        margin-bottom: 30px;
+    }
+}
+h1 {
+    color: white;
+    position: absolute;
+    padding-top: 65px;
+    font-size: 48px;
+    font-family: 'Montserrat';
+}

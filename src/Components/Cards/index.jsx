@@ -1,8 +1,14 @@
+import './card.scss'
+
 function Card({ lodge }) {
     return (
-        <div>
-            {lodge.title}
-            <img src={lodge.cover} alt={lodge.title} />
+        <div className="card">
+            <h3 className="titlecard">{lodge.title}</h3>
+            <img
+                className="card__imgcard"
+                src={lodge.cover}
+                alt={lodge.title}
+            />
         </div>
     )
 }

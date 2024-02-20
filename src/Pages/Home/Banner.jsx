@@ -9,7 +9,7 @@ function Banner() {
                 src={Cliff}
                 alt="Photographie de falaise"
             />
-            <h1>Chez vous, partout et ailleurs</h1>
+            <h1 className="bannertitle">Chez vous, partout et ailleurs</h1>
         </div>
     )
 }

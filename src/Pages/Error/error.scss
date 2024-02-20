@@ -1,0 +1,29 @@
+$police: 'Montserrat';
+
+.errorpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .titleerror {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: #ff6060;
+        font-size: 300px;
+        font-family: $police;
+        font-weight: 700;
+    }
+    .messageerror {
+        color: #ff6060;
+        font-family: $police;
+        font-size: 36px;
+    }
+
+    .linkaccueil {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        color: black;
+        font-family: $police;
+        font-size: 18px;
+    }
+}

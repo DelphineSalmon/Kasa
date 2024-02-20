@@ -6,7 +6,9 @@ function Home() {
     return (
         <div>
             <Banner />
-            <Cards />
+            <div className="containercards">
+                <Cards />
+            </div>
         </div>
     )
 }

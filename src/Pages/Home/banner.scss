@@ -1,16 +1,20 @@
+$shadow-banner: rgba(0, 0, 0, 0.5);
+
 .banner {
     display: flex;
     justify-content: center;
+
     .bannerimage {
         height: 250px;
         width: 95%;
         object-fit: cover;
         border-radius: 30px;
         filter: brightness(0.5);
-        margin-bottom: 30px;
+        margin-bottom: 80px;
+        box-shadow: 0px 6px 20px $shadow-banner;
     }
 }
-h1 {
+.bannertitle {
     color: white;
     position: absolute;
     padding-top: 65px;

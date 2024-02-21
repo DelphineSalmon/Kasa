@@ -1,11 +1,16 @@
 import './home.scss'
-import Banner from './Banner'
+import BannerTemplate from '../../Components/Banner/banner'
+import Cliff from './Images/Cliff.png'
 import Cards from './Cards'
 
 function Home() {
     return (
         <div>
-            <Banner />
+            <BannerTemplate
+                src={Cliff}
+                alt={'Photographie de falaise'}
+                title={'Chez vous, partout et ailleurs'}
+            />
             <div className="containercards">
                 <Cards />
             </div>

@@ -1,12 +1,21 @@
-function About() {
-    return( <div>
+import { getAboutList } from '../../Datas/aboutList'
+import Displayer from '../../Components/Displayer/displayer'
+import Mountain from './Images/Mountain.png'
+import BannerTemplate from '../../Components/Banner/banner'
+import './about.scss'
+
+function Abouts() {
+    return (
         <div>
-            <p>Fiabilité</p>
-            <p>Respect</p>
-            <p>Service</p>
-            <p>Sécurité</p>
+            <BannerTemplate src={Mountain} alt={'Photographie de montagne'} />
+            <div className="containerabout">
+                {' '}
+                {getAboutList().map((about) => {
+                    return <Displayer about={about} />
+                })}
+            </div>
         </div>
-    </div>)
+    )
 }
 
-export default About
+export default Abouts

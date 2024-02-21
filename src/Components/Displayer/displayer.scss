@@ -1,0 +1,62 @@
+$font-display: 'Montserrat';
+
+.titledisplay {
+    color: white;
+    background-color: #ff6060;
+    font-family: $font-display;
+    font-size: 24px;
+    height: 45px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 5px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.descriptiondisplay {
+    background-color: #f6f6f6;
+    font-family: $font-display;
+    font-size: 18px;
+    height: 100px;
+    padding-top: 15px;
+    padding-left: 15px;
+    margin-top: 0;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+    z-index: -1000;
+}
+
+.descriptionhidden {
+    animation: myAnimClose 2s ease 0s 1 normal forwards;
+}
+.arrow_down {
+    transform: rotate(0deg);
+    transition-duration: 500ms;
+}
+.arrow_up {
+    transform: rotate(180deg);
+    transition-duration: 500ms;
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes myAnimClose {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}

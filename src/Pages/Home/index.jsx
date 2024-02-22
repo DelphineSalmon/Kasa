@@ -1,7 +1,8 @@
 import './home.scss'
 import BannerTemplate from '../../Components/Banner/banner'
 import Cliff from './Images/Cliff.png'
-import Cards from './Cards'
+import Card from '../../Components/Cards'
+import { getLodgeList } from '../../Datas/lodgeList'
 
 function Home() {
     return (
@@ -12,7 +13,11 @@ function Home() {
                 title={'Chez vous, partout et ailleurs'}
             />
             <div className="containercards">
-                <Cards />
+                <div className="cards">
+                    {getLodgeList().map((lodge) => (
+                        <Card lodge={lodge} />
+                    ))}
+                </div>
             </div>
         </div>
     )

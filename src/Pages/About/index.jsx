@@ -11,7 +11,12 @@ function Abouts() {
             <div className="containerabout">
                 {' '}
                 {getAboutList().map((about) => {
-                    return <Displayer about={about} />
+                    return (
+                        <Displayer
+                            title={about.title}
+                            description={about.description}
+                        />
+                    )
                 })}
             </div>
         </div>

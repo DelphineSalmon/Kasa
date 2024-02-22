@@ -13,29 +13,34 @@ $font-display: 'Montserrat';
     margin-bottom: 0;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 1000;
 }
-.descriptiondisplay {
+.description {
     background-color: #f6f6f6;
     font-family: $font-display;
     font-size: 18px;
-    height: 100px;
+    padding-bottom: 10px;
     padding-top: 15px;
     padding-left: 15px;
     margin-top: 0;
-    animation: myAnim 2s ease 0s 1 normal forwards;
-    z-index: -1000;
 }
-
+.descriptiondisplay {
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
 .descriptionhidden {
     animation: myAnimClose 2s ease 0s 1 normal forwards;
 }
+.descriptionclose {
+    display: none;
+}
 .arrow_down {
     transform: rotate(0deg);
-    transition-duration: 500ms;
+    transition-duration: 100ms;
 }
 .arrow_up {
     transform: rotate(180deg);
-    transition-duration: 500ms;
+    transition-duration: 100ms;
 }
 
 @keyframes myAnim {
@@ -55,8 +60,11 @@ $font-display: 'Montserrat';
         transform: translateY(0);
     }
 
-    100% {
+    99.999% {
         opacity: 0;
         transform: translateY(-50px);
+    }
+    100% {
+        display: none;
     }
 }

@@ -14,7 +14,7 @@ function MyRouter() {
                 <Header />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/Lodging" element={<Lodging />} />
+                    <Route path="/Lodging/:id" element={<Lodging />} />
                     <Route path="/About" element={<Abouts />} />
                     <Route path="*" element={<Error />} />
                 </Routes>

@@ -7,3 +7,9 @@
     padding: 30px;
     margin-left: 55px;
 }
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-left: 80px;
+}

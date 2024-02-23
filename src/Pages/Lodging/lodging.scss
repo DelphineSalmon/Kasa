@@ -1,0 +1,64 @@
+$color-police: #ff6060;
+$police: 'Montserrat';
+
+.firstcontainer {
+    display: flex;
+    justify-content: space-between;
+}
+.containertitlelocation {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.titlelodge {
+    color: $color-police;
+    font-family: $police;
+    font-size: 40px;
+    padding-left: 190px;
+    margin-bottom: 10px;
+}
+.location {
+    padding-left: 190px;
+    font-family: $police;
+    font-weight: 800;
+}
+
+.containerprofil {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-right: 190px;
+
+    .profilname {
+        color: $color-police;
+        font-family: $police;
+        font-weight: 500;
+    }
+
+    .profilpicture {
+        border-radius: 70px;
+    }
+}
+
+.containerstartags {
+    padding-top: 20px;
+    padding-left: 190px;
+    width: 80%;
+    display: flex;
+
+    .star {
+        width: 20%;
+        display: block;
+    }
+}
+
+.displayerlodge {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 190px;
+    .containerdisplay {
+        width: 45%;
+    }
+}

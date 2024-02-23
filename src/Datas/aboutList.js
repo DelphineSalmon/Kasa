@@ -18,7 +18,7 @@ const aboutList = [
     {
         title: 'Service',
         description:
-            "Nos équipes se tiennet à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.",
+            "Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.",
     },
 
     {

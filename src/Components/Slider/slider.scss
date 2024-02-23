@@ -1,0 +1,43 @@
+.containerslider {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+
+    .pictureslider {
+        height: 450px;
+        width: 80%;
+        border-radius: 40px;
+        object-fit: cover;
+    }
+
+    .left {
+        color: white;
+        height: 50px;
+        height: 80px;
+    }
+
+    .right {
+        color: white;
+        height: 50px;
+        height: 80px;
+    }
+}
+.containerchevron {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 200px;
+    width: 75%;
+}
+.numbering {
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    padding-top: 390px;
+}
+.notdisplay {
+    display: none;
+}

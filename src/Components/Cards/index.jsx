@@ -3,7 +3,7 @@ import './card.scss'
 function Card({ lodge }) {
     return (
         <div className="card">
-            <a href={`/lodging/${lodge.id}`}>
+            <a className="cardlink" href={`/lodging/${lodge.id}`}>
                 <h3 className="titlecard">{lodge.title}</h3>
                 <img
                     className="card__imgcard"

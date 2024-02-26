@@ -5,12 +5,18 @@ import Card from '../../Components/Cards'
 import { getLodgeList } from '../../Datas/lodgeList'
 
 function Home() {
+    const title = (
+        <>
+            <span className="nowrap">Chez vous,</span>
+            <span className="nowrap"> partout et ailleurs</span>
+        </>
+    )
     return (
-        <div>
+        <>
             <BannerTemplate
                 src={Cliff}
                 alt={'Photographie de falaise'}
-                title={'Chez vous, partout et ailleurs'}
+                title={title}
             />
             <div className="containercards">
                 <div className="cards">
@@ -19,7 +25,7 @@ function Home() {
                     ))}
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

@@ -1,3 +1,4 @@
+@import '../../Scss/mixin.scss';
 .card {
     .cardlink::before {
         content: '';
@@ -22,11 +23,15 @@
         padding-top: 270px;
         padding-left: 10px;
     }
-}
-.card__imgcard {
-    display: block;
-    width: 340px;
-    height: 340px;
-    object-fit: cover;
-    border-radius: 10px;
+
+    .card__imgcard {
+        display: block;
+        width: 340px;
+        height: 340px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    @include media-max(768px) {
+        width: 80%;
+    }
 }

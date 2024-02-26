@@ -60,11 +60,11 @@ $font-display: 'Montserrat';
         transform: translateY(0);
     }
 
-    99.999% {
+    100% {
         opacity: 0;
         transform: translateY(-50px);
-    }
-    100% {
-        display: none;
+        height: 0;
+        padding: 0;
+        margin: 0;
     }
 }

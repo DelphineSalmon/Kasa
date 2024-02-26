@@ -15,7 +15,7 @@ function Home() {
             <div className="containercards">
                 <div className="cards">
                     {getLodgeList().map((lodge) => (
-                        <Card lodge={lodge} />
+                        <Card key={lodge.id} lodge={lodge} />
                     ))}
                 </div>
             </div>

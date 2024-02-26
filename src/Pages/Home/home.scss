@@ -1,15 +1,18 @@
 .containercards {
     background-color: #f6f6f6;
     border-radius: 40px;
-    width: 90%;
+    width: 75%;
     display: flex;
     justify-content: center;
     padding: 30px;
-    margin-left: 55px;
-}
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-    margin-left: 80px;
+    margin-left: 200px;
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
 }

@@ -16,6 +16,17 @@ $font-display: 'Montserrat';
     .navbarlink {
         padding-top: 0px;
     }
+
+    .selected {
+        &::before {
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 90px;
+            top: 75px;
+            background-color: black;
+        }
+    }
 }
 .navlogo {
     height: 50px;

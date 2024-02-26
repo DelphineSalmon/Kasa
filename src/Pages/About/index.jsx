@@ -10,9 +10,10 @@ function Abouts() {
             <BannerTemplate src={Mountain} alt={'Photographie de montagne'} />
             <div className="containerabout">
                 {' '}
-                {getAboutList().map((about) => {
+                {getAboutList().map((about, index) => {
                     return (
                         <Displayer
+                            key={index}
                             title={about.title}
                             description={about.description}
                         />

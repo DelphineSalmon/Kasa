@@ -8,10 +8,11 @@ function Star({ rating }) {
         .fill(null)
         .map((_, index) => (
             <FontAwesomeIcon
+                key={index}
                 className={index < rate ? 'starred' : 'stargrey'}
                 icon={faStar}
             />
         ))
-    return <>{notes}</>
+    return <div>{notes}</div>
 }
 export default Star

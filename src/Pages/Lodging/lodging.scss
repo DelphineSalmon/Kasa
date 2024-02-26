@@ -1,4 +1,4 @@
-$color-police: #ff6060;
+$color-theme: #ff6060;
 $police: 'Montserrat';
 
 .firstcontainer {
@@ -11,13 +11,14 @@ $police: 'Montserrat';
     width: 50%;
 }
 .titlelodge {
-    color: $color-police;
+    color: $color-theme;
     font-family: $police;
     font-size: 40px;
     padding-left: 190px;
     margin-bottom: 10px;
 }
 .location {
+    padding-top: 5px;
     padding-left: 190px;
     font-family: $police;
     font-weight: 800;
@@ -30,7 +31,7 @@ $police: 'Montserrat';
     padding-right: 190px;
 
     .profilname {
-        color: $color-police;
+        color: $color-theme;
         font-family: $police;
         font-weight: 500;
     }
@@ -45,10 +46,24 @@ $police: 'Montserrat';
     padding-left: 190px;
     width: 80%;
     display: flex;
+    justify-content: space-between;
 
     .star {
         width: 20%;
         display: block;
+    }
+}
+.tags {
+    font-family: $police;
+    display: flex;
+    gap: 20px;
+
+    .tagsvalue {
+        background-color: $color-theme;
+        padding: 10px 30px 10px 30px;
+        border-radius: 20px;
+        color: white;
+        font-weight: bold;
     }
 }
 
@@ -61,4 +76,8 @@ $police: 'Montserrat';
     .containerdisplay {
         width: 45%;
     }
+}
+
+.listequipment {
+    list-style-type: none;
 }

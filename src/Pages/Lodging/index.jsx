@@ -8,7 +8,11 @@ import './lodging.scss'
 function Lodging() {
     const { id } = useParams()
     const lodge = getLodgeList().filter((value) => value.id === id)[0]
-    const equipments = lodge.equipments.map((equip) => <div>{equip}</div>)
+    const equipments = lodge.equipments.map((equip, index) => (
+        <li className="listequipment" key={index}>
+            {equip}
+        </li>
+    ))
     return (
         <div>
             <Slider pictures={lodge.pictures} />
@@ -28,7 +32,13 @@ function Lodging() {
                 </div>
             </div>
             <div className="containerstartags">
-                <button>{lodge.tags[0]}</button>
+                <div className="tags">
+                    {lodge.tags.map((value, index) => (
+                        <div key={index} className="tagsvalue">
+                            {value}
+                        </div>
+                    ))}
+                </div>
                 <Star className="star" rating={lodge.rating} />
             </div>
 

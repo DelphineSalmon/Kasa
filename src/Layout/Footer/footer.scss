@@ -1,3 +1,5 @@
+@import '../../Scss/mixin.scss';
+
 .footer {
     background-color: black;
     height: 230px;
@@ -7,8 +9,24 @@
     justify-content: center;
     margin-top: 50px;
     font-family: 'Montserrat';
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
 
     p {
         color: white;
+        @media screen and (max-width: 767px) {
+            padding-top: 10px;
+            display: contents;
+        }
+    }
+    .nowrap {
+        white-space: nowrap;
+    }
+    .footerlogo {
+        padding-bottom: 20px;
+        @media screen and (max-width: 767px) {
+            padding-bottom: 20px;
+        }
     }
 }

@@ -1,7 +1,13 @@
+@import '../../Scss/mixin.scss';
+
 .containerslider {
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        margin-left: 20px;
+    }
 
     .pictureslider {
         height: 450px;

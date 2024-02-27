@@ -1,3 +1,5 @@
+@import '../../Scss/mixin.scss';
+
 $police: 'Montserrat';
 
 .errorpage {
@@ -12,11 +14,25 @@ $police: 'Montserrat';
         font-size: 300px;
         font-family: $police;
         font-weight: 700;
+        @include media-max(768px) {
+            padding-top: 40px;
+            padding-bottom: 50px;
+            font-size: 150px;
+        }
     }
     .messageerror {
         color: #ff6060;
         font-family: $police;
         font-size: 36px;
+        @include media-max(768px) {
+            margin-top: 100px;
+            font-size: 20px;
+            display: contents;
+            font-weight: 500;
+        }
+    }
+    .nowrap {
+        white-space: nowrap;
     }
 
     .linkaccueil {
@@ -25,5 +41,6 @@ $police: 'Montserrat';
         color: black;
         font-family: $police;
         font-size: 18px;
+        font-weight: 500;
     }
 }

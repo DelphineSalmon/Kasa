@@ -1,3 +1,5 @@
+@import '../../Scss/mixin.scss';
+
 $color-theme: #ff6060;
 $police: 'Montserrat';
 
@@ -73,8 +75,15 @@ $police: 'Montserrat';
     justify-content: space-between;
     padding-top: 10px;
     padding-left: 190px;
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+    }
     .containerdisplay {
         width: 45%;
+        @media screen and (max-width: 767px) {
+            width: 80%;
+        }
     }
 }
 

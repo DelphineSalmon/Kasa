@@ -23,14 +23,8 @@ $font-display: 'Montserrat';
     }
 
     .selected {
-        &::before {
-            content: '';
-            position: absolute;
-            height: 2px;
-            width: 90px;
-            top: 75px;
-            background-color: black;
-        }
+        text-underline-offset: 0.3em;
+        text-decoration-line: underline;
     }
 }
 .navlogo {

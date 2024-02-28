@@ -16,30 +16,32 @@ function Lodging() {
     return (
         <div>
             <Slider pictures={lodge.pictures} />
-            <div className="firstcontainer">
-                <div className="containertitlelocation">
-                    <h2 className="titlelodge">{lodge.title}</h2>
-                    <p className="location">{lodge.location}</p>
-                </div>
-
-                <div className="containerprofil">
-                    <p className="profilname">{lodge.host.name}</p>
-                    <img
-                        className="profilpicture"
-                        src={lodge.host.picture}
-                        alt={lodge.host.name}
-                    />
-                </div>
-            </div>
-            <div className="containerstartags">
-                <div className="tags">
-                    {lodge.tags.map((value, index) => (
-                        <div key={index} className="tagsvalue">
-                            {value}
+            <div className="lodging">
+                <div className="firstcontainer">
+                    <div className="containertitlelocation">
+                        <h2 className="titlelodge">{lodge.title}</h2>
+                        <p className="location">{lodge.location}</p>
+                        <div className="tags">
+                            {lodge.tags.map((value, index) => (
+                                <div key={index} className="tagsvalue">
+                                    {value}
+                                </div>
+                            ))}
                         </div>
-                    ))}
+                    </div>
                 </div>
-                <Star className="star" rating={lodge.rating} />
+                <div className="containerstarprofil">
+                    <div className="containerprofil">
+                        <p className="profilname">{lodge.host.name}</p>
+                        <img
+                            className="profilpicture"
+                            src={lodge.host.picture}
+                            alt={lodge.host.name}
+                        />
+                    </div>
+
+                    <Star className="star" rating={lodge.rating} />
+                </div>
             </div>
 
             <div className="displayerlodge">

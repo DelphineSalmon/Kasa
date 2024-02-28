@@ -1,7 +1,7 @@
 import { getAboutList } from '../../Datas/aboutList'
-import Displayer from '../../Components/Displayer/displayer'
+import Displayer from '../../Components/Displayer/Displayer'
 import Mountain from './Images/Mountain.png'
-import BannerTemplate from '../../Components/Banner/banner'
+import BannerTemplate from '../../Components/Banner/Banner'
 import './about.scss'
 
 function Abouts() {

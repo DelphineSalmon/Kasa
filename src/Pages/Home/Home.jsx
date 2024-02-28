@@ -1,7 +1,7 @@
 import './home.scss'
-import BannerTemplate from '../../Components/Banner/banner'
+import BannerTemplate from '../../Components/Banner/Banner'
 import Cliff from './Images/Cliff.png'
-import Card from '../../Components/Cards'
+import Card from '../../Components/Card/Card'
 import { getLodgeList } from '../../Datas/lodgeList'
 
 function Home() {

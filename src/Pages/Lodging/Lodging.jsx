@@ -1,8 +1,8 @@
 import { useParams } from 'react-router-dom'
 import { getLodgeList } from '../../Datas/lodgeList'
-import Displayer from '../../Components/Displayer/displayer'
-import Star from '../../Components/Rating/star'
-import Slider from '../../Components/Slider/slider'
+import Displayer from '../../Components/Displayer/Displayer'
+import Star from '../../Components/Rating/Star'
+import Slider from '../../Components/Slider/Slider'
 import './lodging.scss'
 
 function Lodging() {

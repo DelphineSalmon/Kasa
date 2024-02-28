@@ -1,4 +1,5 @@
-@import '../../Scss/mixin.scss';
+@import '../../Scss/utils/mixin';
+@import '../../Scss/utils/variable';
 
 .footer {
     background-color: black;
@@ -8,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     margin-top: 50px;
-    font-family: 'Montserrat';
+    font-family: $police;
     @media screen and (max-width: 767px) {
         width: 100%;
     }

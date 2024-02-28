@@ -1,6 +1,5 @@
-@import '../../Scss/mixin.scss';
-
-$shadow-banner: rgba(0, 0, 0, 0.5);
+@import '../../Scss/utils/mixin';
+@import '../../Scss/utils/variable';
 
 .banner {
     display: flex;

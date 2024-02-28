@@ -1,7 +1,5 @@
-@import '../../Scss/mixin.scss';
-
-$color-theme: #ff6060;
-$police: 'Montserrat';
+@import '../../Scss/utils/mixin';
+@import '../../Scss/utils/variable';
 
 .lodging {
     display: flex;

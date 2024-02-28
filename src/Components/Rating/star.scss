@@ -1,5 +1,7 @@
+@import '../../Scss/utils/variable';
+
 .starred {
-    color: #ff6060;
+    color: $color-theme;
 }
 .stargrey {
     color: #e3e3e3;

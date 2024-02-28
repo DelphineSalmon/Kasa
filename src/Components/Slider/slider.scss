@@ -1,4 +1,5 @@
-@import '../../Scss/mixin.scss';
+@import '../../Scss/utils/mixin';
+@import '../../Scss/utils/variable';
 
 .containerslider {
     display: flex;
@@ -38,7 +39,7 @@
 }
 .numbering {
     color: white;
-    font-family: 'Montserrat';
+    font-family: $police;
     font-size: 18px;
     font-weight: 500;
     position: absolute;

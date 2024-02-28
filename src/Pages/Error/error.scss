@@ -1,6 +1,5 @@
-@import '../../Scss/mixin.scss';
-
-$police: 'Montserrat';
+@import '../../Scss/utils/mixin';
+@import '../../Scss/utils/variable';
 
 .errorpage {
     display: flex;
@@ -10,7 +9,7 @@ $police: 'Montserrat';
     .titleerror {
         margin-top: 0px;
         margin-bottom: 0px;
-        color: #ff6060;
+        color: $color-theme;
         font-size: 300px;
         font-family: $police;
         font-weight: 700;
@@ -21,7 +20,7 @@ $police: 'Montserrat';
         }
     }
     .messageerror {
-        color: #ff6060;
+        color: $color-theme;
         font-family: $police;
         font-size: 36px;
         @include media-max(768px) {

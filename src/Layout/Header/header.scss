@@ -1,4 +1,4 @@
-$font-display: 'Montserrat';
+@import '../../Scss/utils/variable';
 
 .navbar {
     display: flex;
@@ -14,7 +14,7 @@ $font-display: 'Montserrat';
         text-decoration: none;
         font-size: 24px;
         color: black;
-        font-family: $font-display;
+        font-family: $police;
 
         .navbarlink {
             padding-top: 0px;

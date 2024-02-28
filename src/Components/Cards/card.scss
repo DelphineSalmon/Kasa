@@ -1,4 +1,5 @@
-@import '../../Scss/mixin.scss';
+@import '../../Scss/utils/mixin';
+
 .card {
     .cardlink::before {
         content: '';

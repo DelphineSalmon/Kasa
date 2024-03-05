@@ -9,7 +9,7 @@ function Star({ rating }) {
         .map((_, index) => (
             <FontAwesomeIcon
                 key={index}
-                className={index < rate ? 'starred' : 'stargrey'}
+                className={index < rate ? 'starred fa-xl' : 'stargrey fa-xl'}
                 icon={faStar}
             />
         ))

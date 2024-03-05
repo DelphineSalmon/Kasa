@@ -32,7 +32,7 @@
         object-fit: cover;
         border-radius: 10px;
     }
-    @include media-max(768px) {
+    @include media-max(425px) {
         width: 80%;
     }
 }

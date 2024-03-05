@@ -5,6 +5,15 @@ import { useState } from 'react'
 
 function Displayer({ title, description }) {
     const [isOpen, setIsOpen] = useState()
+    let formatting = description
+
+    if (typeof description === 'object') {
+        formatting = description.map((equip, index) => (
+            <li className="listdisplayer" key={index}>
+                {equip}
+            </li>
+        ))
+    }
     return (
         <div className="containerdisplay">
             <h3 className="titledisplay">
@@ -27,7 +36,7 @@ function Displayer({ title, description }) {
                         : 'description descriptionhidden'
                 }
             >
-                {description}
+                {formatting}
             </p>
         </div>
     )

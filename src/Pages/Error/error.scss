@@ -13,17 +13,17 @@
         font-size: 300px;
         font-family: $police;
         font-weight: 700;
-        @include media-max(768px) {
-            padding-top: 40px;
-            padding-bottom: 50px;
-            font-size: 150px;
+        @include media-max(425px) {
+            padding-top: 80px;
+            padding-bottom: 90px;
+            font-size: 100px;
         }
     }
     .messageerror {
         color: $color-theme;
         font-family: $police;
         font-size: 36px;
-        @include media-max(768px) {
+        @include media-max(425px) {
             margin-top: 100px;
             font-size: 20px;
             display: contents;
@@ -41,5 +41,9 @@
         font-family: $police;
         font-size: 18px;
         font-weight: 500;
+        @include media-max(425px) {
+            margin-top: 100px;
+            padding-top: 0;
+        }
     }
 }

@@ -1,4 +1,5 @@
 @import '../../Scss/utils/variable';
+@import '../../Scss/utils/mixin';
 
 .navbar {
     display: flex;
@@ -8,6 +9,10 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (max-width: 425px) {
+        margin-right: 40px;
+        margin-bottom: 10px;
+    }
 
     .navbar__link {
         padding-right: 20px;
@@ -15,6 +20,9 @@
         font-size: 24px;
         color: black;
         font-family: $police;
+        @media screen and (max-width: 425px) {
+            font-size: 16px;
+        }
 
         .navbarlink {
             padding-top: 0px;
@@ -31,4 +39,8 @@
     height: 50px;
     padding: 30px;
     padding-left: 10px;
+    @media screen and (max-width: 425px) {
+        padding-right: 20px;
+        height: 35px;
+    }
 }

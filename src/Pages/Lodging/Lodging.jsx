@@ -1,18 +1,19 @@
 import { useParams } from 'react-router-dom'
-import { getLodgeList } from '../../Datas/lodgeList'
+import { GetLodgeList } from '../../Datas/lodgeList'
 import Displayer from '../../Components/Displayer/Displayer'
 import Star from '../../Components/Rating/Star'
 import Slider from '../../Components/Slider/Slider'
 import './lodging.scss'
+import Error from '../Error/Error'
 
 function Lodging() {
     const { id } = useParams()
-    const lodge = getLodgeList().filter((value) => value.id === id)[0]
-    const equipments = lodge.equipments.map((equip, index) => (
-        <li className="listequipment" key={index}>
-            {equip}
-        </li>
-    ))
+    const lodgeList = GetLodgeList().filter((value) => value.id === id)
+    if (lodgeList.length === 0) {
+        return <Error />
+    }
+    const lodge = lodgeList[0]
+
     return (
         <div>
             <Slider pictures={lodge.pictures} />
@@ -49,7 +50,7 @@ function Lodging() {
                     title="Description"
                     description={lodge.description}
                 />
-                <Displayer title="Equipements" description={equipments} />
+                <Displayer title="Equipements" description={lodge.equipments} />
             </div>
         </div>
     )

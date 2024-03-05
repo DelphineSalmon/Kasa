@@ -13,7 +13,8 @@
         filter: brightness(0.5);
         margin-bottom: 80px;
         box-shadow: 0px 6px 20px $shadow-banner;
-        @include media-max(768px) {
+        @include media-max(425px) {
+            height: 125px;
             margin-bottom: 30px;
         }
     }
@@ -25,9 +26,10 @@
         font-family: 'Montserrat';
         text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, -1px -1px 0 #000,
             1px -1px 0 #000;
-        @include media-max(768px) {
+        @include media-max(425px) {
+            font-size: 25px;
             width: 80%;
-            padding-top: 35px;
+            padding-top: 15px;
             padding-left: 45px;
             overflow-wrap: break-word;
         }

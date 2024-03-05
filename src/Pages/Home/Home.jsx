@@ -2,7 +2,7 @@ import './home.scss'
 import BannerTemplate from '../../Components/Banner/Banner'
 import Cliff from './Images/Cliff.png'
 import Card from '../../Components/Card/Card'
-import { getLodgeList } from '../../Datas/lodgeList'
+import { GetLodgeList } from '../../Datas/lodgeList'
 
 function Home() {
     const title = (
@@ -20,7 +20,7 @@ function Home() {
             />
             <div className="containercards">
                 <div className="cards">
-                    {getLodgeList().map((lodge) => (
+                    {GetLodgeList().map((lodge) => (
                         <Card key={lodge.id} lodge={lodge} />
                     ))}
                 </div>

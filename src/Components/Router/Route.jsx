@@ -1,10 +1,10 @@
 import React from 'react'
-import Home from '../../Pages/Home'
-import Lodging from '../../Pages/Lodging'
-import Header from '../../Layout/Header/header'
-import Footer from '../../Layout/Footer/footer'
-import About from '../../Pages/About'
-import Error from '../../Pages/Error'
+import Home from '../../Pages/Home/Home'
+import Lodging from '../../Pages/Lodging/Lodging'
+import Header from '../../Layout/Header/Header'
+import Footer from '../../Layout/Footer/Footer'
+import Abouts from '../../Pages/About/About'
+import Error from '../../Pages/Error/Error'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function MyRouter() {
@@ -14,8 +14,8 @@ function MyRouter() {
                 <Header />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/Lodging" element={<Lodging />} />
-                    <Route path="/About" element={<About />} />
+                    <Route path="/Lodging/:id" element={<Lodging />} />
+                    <Route path="/About" element={<Abouts />} />
                     <Route path="*" element={<Error />} />
                 </Routes>
                 <Footer />

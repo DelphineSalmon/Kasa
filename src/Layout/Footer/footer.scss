@@ -1,3 +1,6 @@
+@import '../../Scss/utils/mixin';
+@import '../../Scss/utils/variable';
+
 .footer {
     background-color: black;
     height: 230px;
@@ -6,8 +9,25 @@
     flex-direction: column;
     justify-content: center;
     margin-top: 50px;
+    font-family: $police;
+    @media screen and (max-width: 425px) {
+        width: 100%;
+    }
 
     p {
         color: white;
+        @media screen and (max-width: 425px) {
+            padding-top: 10px;
+            display: contents;
+        }
+    }
+    .nowrap {
+        white-space: nowrap;
+    }
+    .footerlogo {
+        padding-bottom: 20px;
+        @media screen and (max-width: 425px) {
+            padding-bottom: 20px;
+        }
     }
 }

@@ -1,0 +1,38 @@
+@import '../../Scss/utils/mixin';
+
+.card {
+    .cardlink::before {
+        content: '';
+        position: absolute;
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+        background: linear-gradient(
+            180deg,
+            rgba(104, 103, 103, 0) 0%,
+            rgba(0, 0, 0, 0.5) 100%
+        );
+    }
+    .titlecard {
+        position: absolute;
+        color: white;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        width: 330px;
+        height: 51px;
+        border-radius: 10px;
+        padding-top: 270px;
+        padding-left: 10px;
+    }
+
+    .card__imgcard {
+        display: block;
+        width: 340px;
+        height: 340px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    @include media-max(425px) {
+        width: 80%;
+    }
+}

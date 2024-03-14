@@ -1,5 +1,4 @@
-import ReactDOM from 'react-dom'
-import './style/index.css'
-import MyRouter from './Components/Router'
-
-ReactDOM.render(<MyRouter />, document.getElementById('root'))
+import { createRoot } from 'react-dom/client'
+import MyRouter from './Components/Router/Route'
+const root = createRoot(document.getElementById('root'))
+root.render(<MyRouter />)

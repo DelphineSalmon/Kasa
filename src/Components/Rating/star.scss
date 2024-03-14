@@ -1,0 +1,14 @@
+@import '../../Scss/utils/variable';
+@import '../../Scss/utils/mixin';
+
+.starred {
+    color: $color-theme;
+}
+.stargrey {
+    color: #e3e3e3;
+}
+.fa-xl {
+    @include media-max(425px) {
+        width: 18px;
+    }
+}

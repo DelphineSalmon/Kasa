@@ -20,9 +20,9 @@ function Slider({ pictures }) {
                     icon={faChevronLeft}
                     onClick={() =>
                         setCurrentIndex(
-                            currentIndex > pictures.length - 2
-                                ? 0
-                                : currentIndex + 1
+                            currentIndex === 0
+                                ? pictures.length - 1
+                                : currentIndex - 1
                         )
                     }
                 />
@@ -32,9 +32,9 @@ function Slider({ pictures }) {
                     icon={faChevronRight}
                     onClick={() =>
                         setCurrentIndex(
-                            currentIndex === 0
-                                ? pictures.length - 1
-                                : currentIndex - 1
+                            currentIndex > pictures.length - 2
+                                ? 0
+                                : currentIndex + 1
                         )
                     }
                 />

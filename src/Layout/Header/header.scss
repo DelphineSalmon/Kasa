@@ -9,7 +9,7 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    @media screen and (max-width: 425px) {
+    @include media-max(425px) {
         margin-right: 40px;
         margin-bottom: 10px;
     }
@@ -20,7 +20,7 @@
         font-size: 24px;
         color: black;
         font-family: $police;
-        @media screen and (max-width: 425px) {
+        @include media-max(425px) {
             font-size: 16px;
         }
 
@@ -39,7 +39,7 @@
     height: 50px;
     padding: 30px;
     padding-left: 10px;
-    @media screen and (max-width: 425px) {
+    @include media-max(425px) {
         padding-right: 20px;
         height: 35px;
     }

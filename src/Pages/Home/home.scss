@@ -9,11 +9,13 @@
     padding: 30px;
     margin-left: 200px;
     @include media-max(1024px) {
-        margin-left: 80px;
+        margin-left: auto;
+        margin-right: auto;
         width: 80%;
     }
     @include media-max(425px) {
-        margin-left: 15px;
+        margin-left: auto;
+        margin-right: auto;
         background-color: transparent;
     }
 }

@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import { GetLodgeList } from '../../Datas/lodgeList'
+import lodgeList from '../../Datas/lodgeList.json'
 import Displayer from '../../Components/Displayer/Displayer'
 import Star from '../../Components/Rating/Star'
 import Slider from '../../Components/Slider/Slider'
@@ -8,11 +8,11 @@ import Error from '../Error/Error'
 
 function Lodging() {
     const { id } = useParams()
-    const lodgeList = GetLodgeList().filter((value) => value.id === id)
-    if (lodgeList.length === 0) {
+    const lodges = lodgeList.filter((value) => value.id === id)
+    if (lodges.length === 0) {
         return <Error />
     }
-    const lodge = lodgeList[0]
+    const lodge = lodges[0]
 
     return (
         <div>

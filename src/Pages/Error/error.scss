@@ -13,6 +13,9 @@
         font-size: 300px;
         font-family: $police;
         font-weight: 700;
+        @include media-max(1024px) {
+            font-size: 250px;
+        }
         @include media-max(425px) {
             padding-top: 80px;
             padding-bottom: 90px;
@@ -23,6 +26,9 @@
         color: $color-theme;
         font-family: $police;
         font-size: 36px;
+        @include media-max(1024px) {
+            font-size: 25px;
+        }
         @include media-max(425px) {
             margin-top: 100px;
             font-size: 20px;

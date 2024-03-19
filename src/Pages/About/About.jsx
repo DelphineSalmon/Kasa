@@ -1,4 +1,4 @@
-import { getAboutList } from '../../Datas/aboutList'
+import aboutList from '../../Datas/aboutList.json'
 import Displayer from '../../Components/Displayer/Displayer'
 import Mountain from './Images/Mountain.png'
 import BannerTemplate from '../../Components/Banner/Banner'
@@ -10,7 +10,7 @@ function Abouts() {
             <BannerTemplate src={Mountain} alt={'Photographie de montagne'} />
             <div className="containerabout">
                 {' '}
-                {getAboutList().map((about, index) => {
+                {aboutList.map((about, index) => {
                     return (
                         <Displayer
                             key={index}
